@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" crossorigin="anonymous">
 
@@ -71,33 +72,42 @@
                                 <input type="text" class="form-control" id="zipCode" placeholder="XXXXX">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck">
                                 <label class="form-check-label" for="gridCheck">
                                 Check me out
                                 </label>
                             </div>
-                        </div>
+                        </div> -->
                         <button type="submit" class="btn btn-primary">Sign in</button>
                     </form>
                 </div>
             </div>
             <!-- End Form Column -->
-            <div id="receipt">
-                <!-- Begin Receipt Column -->
-                <div class="col-md-6 bg-secondary text-white">
-                    
-                    <span class="email"></span>
-                    <span class="firstName"></span>
-                    <span class="lastName"></span>
-                    <span class="address"></span>
-                    <span class="city"></span>
-                    <span class="state"></span>
-                    <span class="zipCode"></span>            
-            
-                </div>
-                 
+            <!-- Begin Receipt Column -->
+            <div class="col-md-6">
+                <div id="receipt">    
+                    <!-- Begin Nested Column -->    
+                    <div class="col-md-12 bg-secondary text-white">
+                        <h1>Your Receipt:</h1>
+                        <p><span class="firstName"></span>, thank you for your purchase of:<br>
+                        (6) Widgets @ $1.00 = $6.00</p>
+                        <p>Your shipping address:</p>
+                        <p><span class="firstName"></span> <span class="lastName"></span><br>
+                        <span class="address"></span><br>
+                        <span class="city"></span>, <span class="state"></span><br> 
+                        <span class="zipCode"></span></p>
+                        <p>An email will be sent to <span class="email"></span> as confirmation.</p>       
+                        <!-- <span class="email"></span>
+                        <span class="firstName"></span>
+                        <span class="lastName"></span>
+                        <span class="address"></span>
+                        <span class="city"></span>
+                        <span class="state"></span>
+                        <span class="zipCode"></span>  -->
+                    </div>
+                    <!-- End Nested Column -->
                 </div>
                 <!-- End Receipt Column -->
             </div>
