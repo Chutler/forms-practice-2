@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+    $("#state").on("change",function(){
+        //Getting Value
+        var stateInput = $("#state :selected").text();
+        //Setting Value
+        $(".state").val(stateInput);
+    }); 
+
     $("#blanks form").submit(function() {
         var emailInput = $("input#email").val();
         var passwordInput = $("input#password").val();
@@ -6,7 +14,7 @@ $(document).ready(function(){
         var lastNameInput = $("input#lastName").val();
         var addressInput = $("input#address").val();
         var cityInput = $("input#city").val();
-        var stateInput = $("input#state").val();
+        // var stateInput = $("input#state").val();
         var zipCodeInput = $("input#zipCode").val();
         // var cityInput = $("input#city").val();
     
@@ -16,7 +24,7 @@ $(document).ready(function(){
         $(".lastName").text(lastNameInput);
         $(".address").text(addressInput);
         $(".city").text(cityInput);
-        $(".state").text(stateInput);
+        // $(".state").text(stateInput);
         $(".zipCode").text(zipCodeInput);
         // $(".noun").text(cityInput);
     
@@ -24,8 +32,6 @@ $(document).ready(function(){
         $("#blank").hide();
     
         event.preventDefault();
-
-      
     });
 
 });
