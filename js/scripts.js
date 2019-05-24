@@ -1,12 +1,5 @@
 $(document).ready(function(){
 
-    $("#state").on("change",function(){
-        //Getting Value
-        var stateInput = $("#state :selected").text();
-        //Setting Value
-        $(".state").val(stateInput);
-    }); 
-
     $("#blanks form").submit(function() {
         var emailInput = $("input#email").val();
         var passwordInput = $("input#password").val();
@@ -29,10 +22,19 @@ $(document).ready(function(){
         // $(".noun").text(cityInput);
     
         $("#receipt").show();
-        $("#blank").hide();
+        $("#blank").hide(); // ?
     
         event.preventDefault();
     });
+
+    // Below is the code for the select element for State
+    // I cannot make it work
+    $("#state").on("change",function(){
+        //Getting Value
+        var stateInput = $("#state :selected").val();
+        //Setting Value
+        $(".state").val(stateInput);
+    }); 
 
 });
 
