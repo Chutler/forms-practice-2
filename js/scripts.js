@@ -30,7 +30,6 @@ $(document).ready(function(){
     });
 
     // Below is the code for the select element for State
-    // I cannot make it work
     $("#state").on("change",function(){
         //Getting Value
         var stateInput = $("#state :selected").val();
