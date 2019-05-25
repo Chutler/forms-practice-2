@@ -20,9 +20,11 @@ $(document).ready(function(){
         // $(".state").text(stateInput);
         $(".zipCode").text(zipCodeInput);
         // $(".noun").text(cityInput);
+
+        // $('#SelectBoxId option:selected').text();
     
         $("#receipt").show();
-        $("#blank").hide(); // ?
+        // $("#blank").hide();
     
         event.preventDefault();
     });
@@ -33,7 +35,7 @@ $(document).ready(function(){
         //Getting Value
         var stateInput = $("#state :selected").val();
         //Setting Value
-        $(".state").val(stateInput);
+        $(".state").text(stateInput);
     }); 
 
 });
